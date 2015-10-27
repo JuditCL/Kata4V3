@@ -12,8 +12,8 @@ import java.io.OutputStream;
 public class Kata4V3 {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        String from = "C:\\Users\\usuario\\Desktop\\email.txt";
-        String to = "C:\\Users\\usuario\\Desktop\\email(1).txt";
+        String from = "C:\\Users\\usuario\\Desktop\\T2 Abstraccion y polimorfismo.pdf";
+        String to = "C:\\Users\\usuario\\Desktop\\T2 Abstraccion y polimorfismo(1).pdf";
         InputStream input = new BufferedInputStream(new FileInputStream(from));
         OutputStream output = new BufferedOutputStream(new FileOutputStream(to));
         while(true){
