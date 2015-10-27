@@ -17,11 +17,12 @@ public class Kata4V3 {
         String to = "C:\\Users\\usuario\\Desktop\\T2 Abstraccion y polimorfismo(1).pdf";
         InputStream input = new BufferedInputStream(new FileInputStream(from));
         OutputStream output = new BufferedOutputStream(new FileOutputStream(to));
+        byte [] buffer = new byte[1024];
         Date ini = new Date();
         while(true){
-            int read = input.read();
+            int read = input.read(buffer);
             if(read < 0)break;
-            output.write(read);
+            output.write(buffer);
         }
         System.out.println(new Date().getTime() - ini.getTime() );
         input.close();
